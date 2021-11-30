@@ -1,0 +1,177 @@
+$box-shadow: 0 1px 2px rgba(93, 93, 93, 0.048),
+0 3px 6px rgba(0, 0, 0, 0.23);
+
+.home {
+  position: relative;
+  top: 5em;
+
+  @media only screen and (max-width: 600px) {
+    top: 4em;
+  }
+
+  .intro {
+    background-image: url(../../assets/images/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em 0;
+    height: 50vh;
+    padding-top: 10em;
+
+    @media only screen and (max-width: 600px) {
+      padding: 3em 0;
+      height: 30vh;
+    }
+
+
+    h1 {
+      text-align: center;
+      font-weight: 800;
+      width: 60%;
+      margin: 0 auto;
+      color: #fff;
+
+      @media only screen and (max-width: 600px) {
+        width: 75%;
+        font-size: 1.2em;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: .75em;
+        display: block;
+        margin: 1em;
+
+        @media only screen and (max-width: 600px) {
+          font-size: .55em;
+        }
+      }
+    }
+  }
+
+  .slide-2 {
+    background-image: url(../../assets/images/banner2.png);
+  }
+
+  .slide-3 {
+    background-image: url(../../assets/images/banner3.png);
+  }
+}
+
+
+.sliders {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% auto;
+  top: 15em;
+  padding: .4em 6em;
+
+  @media only screen and (max-width: 600px) {
+    top: 4em;
+    padding: .4em;
+  }
+
+  div {
+    text-align: left;
+
+    span {
+      cursor: pointer;
+      color: #fff;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+
+.rigth {
+  animation: moveInRight .5s ease-out 0s;
+  animation-fill-mode: backwards;
+}
+
+.left {
+  animation: moveInLeft .5s ease-out 0s;
+  animation-fill-mode: backwards;
+}
+
+
+.services {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 1em;
+  grid-gap: 1em;
+  margin: .5em auto;
+  box-sizing: border-box;
+  position: relative;
+  left: -1em;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+    left: 0em;
+  }
+
+  .service {
+    background: #fff;
+    box-shadow: $box-shadow;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+
+    span {
+      display: block;
+    }
+
+    p {
+      padding: .5em;
+    }
+  }
+}
+
+
+.main-heading {
+  width: 60%;
+  margin: 1em auto;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+
+    width: 90%;
+    font-size: 1.4em;
+  }
+}
+
+.section {
+  background: #777777;
+  padding: 2.5em 1em;
+  margin: 0;
+  color: rgb(255, 255, 255);
+
+  p {
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+
+.white {
+  background: #fff;
+  color: #000;
+}
+
+
+.mocks {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .mock {
+    margin: 1em auto;
+  }
+}

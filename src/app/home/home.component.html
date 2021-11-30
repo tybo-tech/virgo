@@ -1,0 +1,117 @@
+<div class="home">
+
+  <div class="intro" *ngIf="slide == 1" [ngClass]="thisClass">
+    <h1>
+      Enhancing businesses with
+      innovative solutions
+
+      <span>
+        We apply modern design principles to build high
+        quality and scalable digital products
+      </span>
+    </h1>
+  </div>
+
+  <div class="intro slide-2" *ngIf="slide == 2" [ngClass]="thisClass">
+    <h1>
+      Interactive functional and stunning website design
+
+      <span>
+        We apply modern design principles to build high
+        quality and scalable digital products
+      </span>
+    </h1>
+  </div>
+  <div class="intro slide-3" *ngIf="slide == 3" [ngClass]="thisClass">
+    <h1>
+      Build your brand
+
+      <span>
+        Get your message in front of future customers.
+      </span>
+    </h1>
+  </div>
+
+  <div class="sliders">
+    <div class="" (click)="changeSlide(-1)">
+      <span class="material-icons">
+        arrow_back_ios
+      </span>
+    </div>
+
+    <div class="">
+      <span class="material-icons" (click)="changeSlide(1)">
+        arrow_forward_ios
+      </span>
+    </div>
+
+
+  </div>
+
+  <h1 class="main-heading">
+    <br><br>
+    Custom Web & Software development company serving small & big organizations
+
+  </h1>
+  <div class="services">
+    <div class="service" *ngFor="let item of services" (click)="goto(item)" [ngClass]="item.Class">
+      <span class="material-icons">
+        {{item.Icon}}
+      </span>
+      <h4>
+        {{item.Name}}
+      </h4>
+
+      <p>
+        {{item.Description}}
+      </p>
+    </div>
+
+  </div>
+  <div class="section">
+
+    <h1 class="main-heading">
+      We help businesses grow.
+    </h1>
+
+    <p>
+      Vigor - managed technology solutions is a registered full-service website, mobile app and e-commerce development
+      company. We apply modern principles to build high quality and affordable digital solutions for small and big
+      businesses. Our innovative solutions will simplify your business processes and give an edge over your competition.
+      Our experienced in-house team is capable of delivering top quality and scalable digital solutions. We are based in
+      Durban and Johannesburg, South Africa but we serve our clients all over the world.
+    </p>
+  </div>
+  <div class="section white">
+
+    <h1 class="main-heading">
+      View Samples of our work
+    </h1>
+
+    <div class="mocks">
+      <div class="mock">
+        <img src="../../assets/images/mock1.png" alt="">
+        <p>
+          <b>Salon booking</b> <br>
+          <a href="https://zoweh.co.za" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+      </div>
+
+      <div class="mock">
+        <img src="../../assets/images/mock2.png" alt="">
+        <p>
+          <a href="https://tybofashion.co.za" target="_blank" rel="noopener noreferrer">
+            <b>Tybo Fashion,Online shop</b></a>
+        </p>
+      </div>
+
+      <div class="mock">
+        <img src="../../assets/images/mock3.png" alt="">
+        <p>
+          <b>Tybo Fashion Dashboard,Online shop</b> <br>
+          <a href="https://admin.tybofashion.co.za" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
